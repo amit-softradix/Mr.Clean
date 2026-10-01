@@ -4,8 +4,8 @@
   "version": "0.1.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc --noEmit && vite build",
+    "dev": "node init && vite",
+    "build": "node init && tsc --noEmit && vite build",
     "preview": "vite preview",
     "typecheck": "tsc --noEmit",
     "tauri": "tauri",
@@ -14,8 +14,10 @@
   },
   "dependencies": {
     "@tauri-apps/api": "^2.11.0",
+    "dotenv": "^8.2.0",
     "lucide-react": "^1.48.0",
     "motion": "^13.4.4",
+    "node-fetch": "^3.3.2",
     "react": "^19.3.0",
     "react-dom": "^19.3.0"
   },
